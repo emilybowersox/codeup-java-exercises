@@ -1,5 +1,6 @@
 public class HelloWorld {
     public static void main(String[] args){
+        //a string array called "args"
         System.out.println("Hello, World!");
 
         int myFavoriteNumber = 13;
