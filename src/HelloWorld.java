@@ -27,6 +27,18 @@ public class HelloWorld {
         System.out.println(a);
         System.out.println(b);
 
+        int aBigNumber = 75;
+        aBigNumber *= 2;
+        System.out.println(aBigNumber);
 
+        x = Integer.MAX_VALUE;
+        x++;
+        System.out.println(x);
+        //when you put ++ to the max value it flips- goes from a positive number to the
+        //negative version of that number- it broke but technically still works
+
+        //You cannot cast strings- only numbers
+        //if you're tryign to cast string with a number in it
+        //- you'd have to do Integer.parseInt- parsing it but also have to declare the class type (Integer)
     }
 }
