@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 public class ControlFlowExercises {
     public static void main(String[] args) {
 
@@ -46,22 +48,63 @@ public class ControlFlowExercises {
 //            System.out.println("i is " + i);
 //        }
 //        //just have to use long instead of int!!
+            //the problem is called an "overflow"
 
 
-//Fizzbuzz
-        for (int i = 1; i <= 100; i++) {
-            if (i % 3 == 0 && i % 5 == 0)
-                System.out.println("Fizzbuzz");
-            else if (i % 3 == 0)
-                System.out.println("Fizz");
-            else if (i % 5 == 0)
-                System.out.println("Buzz");
+////Fizzbuzz
+//        for (int i = 1; i <= 100; i++) {
+//            if (i % 3 == 0 && i % 5 == 0)
+//                System.out.println("Fizzbuzz");
+//            else if (i % 3 == 0)
+//                System.out.println("Fizz");
+//            else if (i % 5 == 0)
+//                System.out.println("Buzz");
+//            else
+//                System.out.println(i);
+//        }
+
+
+
+
+
+//    Scanner numbers = new Scanner(System.in);
+//    //initializing a scanner named (number)
+//        //had to import "import java.util.Scanner;" at the top!!!
+//    System.out.print("Please enter an integer: ");
+//    int userNumber = numbers.nextInt();
+//    System.out.print("Now enter the number you want your table to go up to: ");
+//    int userTop = numbers.nextInt();
+//    System.out.println("You want the table to range from " + userNumber + " to " + userTop);
+//
+//    int numberSquared = userNumber*=userNumber;
+//        System.out.println(numberSquared);
+//    int numberCubed = userNumber*=numberSquared;
+//    System.out.println(numberCubed);
+//
+
+//    System.out.println("Here is your table!");
+//    System.out.println("");
+//    System.out.println("number | squared | cubed");
+//    System.out.println("------ | ------- | -----");
+//    System.out.println(userNumber + "      " + numberSquared + "         " + numberCubed);
+
+
+        Scanner grades = new Scanner(System.in);
+        System.out.print("Enter a grade number: ");
+        int grade = grades.nextInt();
+
+            if (grade > 100)
+                System.out.print("Overachiever! That's not a valid grade ;)");
+            else if (grade <= 100 && grade >= 88)
+                System.out.println("A");
+            else if (grade <= 87 && grade >= 80)
+                System.out.println("B");
+            else if (grade <= 79 && grade >= 67)
+                System.out.println("C");
+            else if (grade <= 66 && grade >= 60)
+                System.out.println("D");
             else
-                System.out.println(i);
-        }
-
-
-
+                System.out.println("F");
 
 
 
