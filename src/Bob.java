@@ -15,12 +15,13 @@ public class Bob {
 
 
         Scanner convo = new Scanner(System.in);
+        System.out.println("Go ahead, talk to Bob!");
         //make sure you import "import java.util.Scanner;" at top!
 
         String userInput = convo.nextLine();
 
         if (userInput.endsWith("?")) {
-            System.out.println("Sure");
+            System.out.println("Sure.");
         }
         else if (userInput.endsWith("!")) {
             System.out.println("Whoa, chill out!");
