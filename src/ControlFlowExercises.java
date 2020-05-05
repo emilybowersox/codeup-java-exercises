@@ -70,54 +70,66 @@ public class ControlFlowExercises {
     Scanner numbers = new Scanner(System.in);
     //initializing a scanner named (number)
         //had to import "import java.util.Scanner;" at the top!!!
-    System.out.print("Please enter an integer: ");
-    int userNumber = numbers.nextInt();
-    System.out.print("Now enter the number you want your table to go up to: ");
-    int userTop = numbers.nextInt();
-    System.out.println("You want the table to range from " + userNumber + " to " + userTop);
+        boolean userContinues = true;
 
-    int numberSquared = userNumber*=userNumber;
-        System.out.println(numberSquared);
-    int numberCubed = userNumber*=numberSquared;
-    System.out.println(numberCubed);
+        do {
+//            System.out.print("Please enter an integer: ");
+//            int userNumber = numbers.nextInt();
+            System.out.print("What number you want your table to go up to: ");
+            int userTop = numbers.nextInt();
+            System.out.println("You want the table to range from " + userNumber + " to " + userTop);
+
+            int numberSquared = userNumber *= userNumber;
+            System.out.println(numberSquared);
+            int numberCubed = userNumber *= numberSquared;
+            System.out.println(numberCubed);
 
 
-    System.out.println("Here is your table!");
-    System.out.println("");
-    System.out.println("number | squared | cubed");
-    System.out.println("------ | ------- | -----");
-    System.out.println(userNumber + "      " + numberSquared + "         " + numberCubed);
+            System.out.println("Here is your table!");
+            System.out.println("");
+            System.out.println("number | squared | cubed");
+            System.out.println("------ | ------- | -----");
+            System.out.println(userNumber + "      " + numberSquared + "         " + numberCubed);
+
+        } while (userContinues);
+
 
 //
-//
-//
-//
+
+
+
 //        Scanner grades = new Scanner(System.in);
-//        System.out.print("Enter a grade number: ");
-//        int grade = grades.nextInt();
-//        System.out.println("Would you like to continue?");
-//        String agree = grades.next();
+//        boolean continueOn = true;
 //
-//        if (agree == "y" || agree == "yes" || agree == "Y" || agree == "Yes") {
-//            continue;
-//        } else {
-//            break;
-//        }
+//do {
+//    System.out.print("Enter a grade number: ");
+//    int grade = grades.nextInt();
 //
+//    if (grade > 100)
+//        System.out.print("Overachiever! That's not a valid grade ;)");
+//    else if (grade <= 100 && grade >= 88)
+//        //don't need all these true^ statements cause it's working through the list
+//        //top to bottom, you don't need to evauluate for a condition that's already
+//        //been evaluated
+//        System.out.println("A");
+//    else if (grade <= 87 && grade >= 80)
+//        System.out.println("B");
+//    else if (grade <= 79 && grade >= 67)
+//        System.out.println("C");
+//    else if (grade <= 66 && grade >= 60)
+//        System.out.println("D");
+//    else
+//        System.out.println("F");
 //
-//            if (grade > 100)
-//                System.out.print("Overachiever! That's not a valid grade ;)");
-//            else if (grade <= 100 && grade >= 88)
-//                System.out.println("A");
-//            else if (grade <= 87 && grade >= 80)
-//                System.out.println("B");
-//            else if (grade <= 79 && grade >= 67)
-//                System.out.println("C");
-//            else if (grade <= 66 && grade >= 60)
-//                System.out.println("D");
-//            else
-//                System.out.println("F");
-
+//    System.out.println("Would you like to continue?");
+//    String agree = grades.next();
+//    if (agree.equalsIgnoreCase("y") || agree.equalsIgnoreCase("yes")) {
+//        continueOn = true;
+//    }
+//} while (continueOn);
+//
+////when using do-whiles, initialize a boolean outside that you will say is true or false
+//        // do, WHILE (if) this condition is true
 
 
     }
