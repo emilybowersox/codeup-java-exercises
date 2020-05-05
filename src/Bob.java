@@ -15,25 +15,24 @@ public class Bob {
 
 
         Scanner convo = new Scanner(System.in);
+
+        boolean keepTalking = true;
         System.out.println("Go ahead, talk to Bob!");
-        //make sure you import "import java.util.Scanner;" at top!
+        //placing the intro outside so it doesn't keep repeating
+        do {
+            String userInput = convo.nextLine();
 
-        String userInput = convo.nextLine();
-
-        if (userInput.endsWith("?")) {
-            System.out.println("Sure.");
-        }
-        else if (userInput.endsWith("!")) {
-            System.out.println("Whoa, chill out!");
-        }
-        else if (userInput.trim().equals("")) {
-            System.out.println("Fine. Be that way!");
-        }
-        else {
-            System.out.println("Whatever.");
-        }
-
-
+            if (userInput.endsWith("?")) {
+                System.out.println("Sure.");
+            } else if (userInput.endsWith("!")) {
+                System.out.println("Whoa, chill out!");
+            } else if (userInput.trim().equals("")) {
+                System.out.println("Fine. Be that way!");
+            } else {
+                System.out.println("Whatever.");
+            }
+        } while (keepTalking);
+        //can also just write "true"
 
 
 
