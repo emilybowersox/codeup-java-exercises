@@ -33,12 +33,9 @@ public class MethodsExercises {
 //        multiply(4,7);
 //        System.out.println(divide(3,2));
 //        System.out.println(modulus(5,2));
+            factorial();
             getInteger(1, 10);
     }
-
-
-
-
 
 
     public static int getInteger(int min, int max) {
@@ -56,9 +53,23 @@ public class MethodsExercises {
             System.out.println("Number is within range");
             return userInput;
         }
-
-
     }
+
+    public static void factorial(){
+        int userInput = getInteger(1,10);
+        int sum = 1;
+        System.out.println("userInput = " + userInput);
+        for (int fa = userInput; fa >= 1; fa--){
+//            System.out.println("fa = " + fa);
+            sum *= fa;
+        }
+        System.out.println("factorial of " + userInput + " is " + sum);
+    }
+
+
+
+
+
 
 }
 
