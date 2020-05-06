@@ -34,7 +34,9 @@ public class MethodsExercises {
 //        System.out.println(divide(3,2));
 //        System.out.println(modulus(5,2));
         Scanner scan = new Scanner(System.in);
-
+        ////by putting the scanner here in the main method you don't have to include it in every method
+        //// use the main method to actually execute your methods (functions)
+        //// write your methods (functions) on their own (need to have a return unless 'void')
         while (true) {
             factorial();
             System.out.println("Do you wish to continue? y/n");
