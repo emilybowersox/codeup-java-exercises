@@ -67,32 +67,32 @@ public class ControlFlowExercises {
 
 
 
-    Scanner numbers = new Scanner(System.in);
-    //initializing a scanner named (number)
-        //had to import "import java.util.Scanner;" at the top!!!
-        boolean userContinues = true;
-
-        do {
-//            System.out.print("Please enter an integer: ");
-//            int userNumber = numbers.nextInt();
-            System.out.print("What number you want your table to go up to: ");
-            int userTop = numbers.nextInt();
-            System.out.println("You want the table to range from " + userNumber + " to " + userTop);
-
-            int numberSquared = userNumber *= userNumber;
-            System.out.println(numberSquared);
-            int numberCubed = userNumber *= numberSquared;
-            System.out.println(numberCubed);
-
-
-            System.out.println("Here is your table!");
-            System.out.println("");
-            System.out.println("number | squared | cubed");
-            System.out.println("------ | ------- | -----");
-            System.out.println(userNumber + "      " + numberSquared + "         " + numberCubed);
-
-        } while (userContinues);
-
+//    Scanner numbers = new Scanner(System.in);
+//    //initializing a scanner named (number)
+//        //had to import "import java.util.Scanner;" at the top!!!
+//        boolean userContinues = true;
+//
+//        do {
+////            System.out.print("Please enter an integer: ");
+////            int userNumber = numbers.nextInt();
+//            System.out.print("What number you want your table to go up to: ");
+//            int userTop = numbers.nextInt();
+//            System.out.println("You want the table to range from " + userNumber + " to " + userTop);
+//
+//            int numberSquared = userNumber *= userNumber;
+//            System.out.println(numberSquared);
+//            int numberCubed = userNumber *= numberSquared;
+//            System.out.println(numberCubed);
+//
+//
+//            System.out.println("Here is your table!");
+//            System.out.println("");
+//            System.out.println("number | squared | cubed");
+//            System.out.println("------ | ------- | -----");
+//            System.out.println(userNumber + "      " + numberSquared + "         " + numberCubed);
+//
+//        } while (userContinues);
+//
 
 //
 
