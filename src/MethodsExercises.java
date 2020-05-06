@@ -33,7 +33,16 @@ public class MethodsExercises {
 //        multiply(4,7);
 //        System.out.println(divide(3,2));
 //        System.out.println(modulus(5,2));
+        Scanner scan = new Scanner(System.in);
+
+        while (true) {
             factorial();
+            System.out.println("Do you wish to continue? y/n");
+            String answer = scan.nextLine();
+            if(!answer.toLowerCase().equals("y")){
+                break;
+            }
+        }
             getInteger(1, 10);
     }
 
