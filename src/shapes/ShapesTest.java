@@ -13,7 +13,6 @@ package shapes;
 // verify that the getPerimeter and getArea methods return 20 and 25, respectively.
 
 
-
 public class ShapesTest {
 
 public static void main(String[] args){
@@ -23,6 +22,9 @@ Rectangle box1 = new Rectangle(4, 5);
     System.out.println("the perimeter is " + box1.getPerimeter());
     System.out.println("the area is " + box1.getArea());
 
+    Square sq1 = new Square(5);
+    System.out.println(sq1.getArea());
+    System.out.println(sq1.getPerimeter());
 
 }
 
