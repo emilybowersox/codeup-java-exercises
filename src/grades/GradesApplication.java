@@ -53,13 +53,19 @@ public class GradesApplication {
             //KEY here is the github username
         }
 
-        System.out.println("What student do you want to look up?");
-        String userInput = input.getString();
-        if(students.containsKey(userInput)) {
-            System.out.println("yep we have that student");
-        } else {
-            System.out.println("sorry no student by that name: " + userInput);
-        }
+
+
+        do {
+            System.out.println("What student do you want to look up?");
+            String userInput = input.getString();
+            if(students.containsKey(userInput)) {
+                System.out.println("yep we have that student");
+            } else {
+                System.out.println("sorry no student by that name: " + userInput);
+            }
+            System.out.println("do you want to see another student?");
+        } while(input.yesNo());
+
 
     }
 
