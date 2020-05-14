@@ -31,13 +31,7 @@ public class Student {
         return sum / this.grades.size();
     }
 
-    public static void main(String[] args) {
-        getname("")
 
-
-
-
-    }
 
 
 }
