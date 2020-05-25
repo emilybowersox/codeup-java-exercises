@@ -20,6 +20,13 @@ public class MoviesApplication {
         String userChoice = scanner.nextLine();
         System.out.println(userChoice);
 
+//
+//        if (userChoice == 1) {
+//            for String Movie[] : MoviesArray {
+//                System.out.println(getName() + getCategory());
+//            }
+//
+        }
 
 
     }
