@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class MoviesApplication {
 
-    public static void main(String[] args){
+    public static void main(String[] args) {
 
         Scanner scanner = new Scanner(System.in);
 
@@ -17,19 +17,29 @@ public class MoviesApplication {
                 "4 - view movies in the horror category\n" +
                 "5 - view movies in the scifi category");
 
-        String userChoice = scanner.nextLine();
+        Integer userChoice = scanner.nextInt();
         System.out.println(userChoice);
 
-//
-//        if (userChoice == 1) {
-//            for String Movie[] : MoviesArray {
-//                System.out.println(getName() + getCategory());
-//            }
-//
+
+        if (userChoice == 1) {
+            for String Movie[] :MoviesArray {
+                System.out.println(getName() + getCategory());
+            }
+        } else if (userChoice == 2) {
+            System.out.println();
+        } else if (userChoice == 3) {
+            System.out.println();
+        } else if (userChoice == 4) {
+            System.out.println();
+        } else if (userChoice == 5) {
+            System.out.println();
+        } else {
+            System.out.println("Oops! You did not enter a valid choice.");
         }
-
-
     }
+
+
+}
 
 
 }
