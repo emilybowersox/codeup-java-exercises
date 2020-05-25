@@ -1,8 +1,8 @@
-package shapes;
-
-public interface Measurable {
-
-
-
-
-}
+//package shapes;
+//
+//public interface Measurable {
+//
+//
+//
+//
+//}

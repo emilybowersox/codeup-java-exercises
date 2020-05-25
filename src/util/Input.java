@@ -21,7 +21,9 @@ public class Input {
 
     public int getInt(int min, int max){
         System.out.println("Give me a number between " + min + " and "  + max);
+        //try
         int aNumber = Integer.parseInt(scanner.nextLine());
+        //try^
         if(aNumber < min || aNumber > max){
             System.out.println("Outside of the range, try again");
             return getInt(min, max);
@@ -48,5 +50,7 @@ public class Input {
         System.out.println("Give me a decimal:");
         return Double.parseDouble(scanner.nextLine());
     }
+
+
 
 }

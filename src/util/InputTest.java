@@ -11,6 +11,7 @@ public class InputTest {
 
 //        System.out.println("input.getInt() = " + input.getInt());
 
+        System.out.println(input.getString());
         System.out.println("input.getDouble() = " + input.getDouble());
         System.out.println("input.getDouble(min, max) = " + input.getDouble(5.5, 10.90));
 
