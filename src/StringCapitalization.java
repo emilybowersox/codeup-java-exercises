@@ -11,7 +11,10 @@ public static String capitalizeLetters (String sentence) {
 
     array = sentence.toCharArray(); //put the sentence into a character array
 
+    //need to add- if the i+= 1 is a space (" "), then i +=1, otherwise, do i+=2
+
     for (int i = 0; i < array.length; i += 2) {
+        //problem right now is that after a 1 character word it doesn't recognize the spaces afterwards
         if (array[i] == ' ') { //if the character is blank, move to the next index
             i++;
         }
@@ -31,7 +34,7 @@ public static String capitalizeLetters (String sentence) {
         BufferedReader in = new BufferedReader(reader);
 
         System.out.println("hello");
-        String sampleSentence = "i would want to manipulate this string";
+        String sampleSentence = "i would want to manipulate this string yes i would";
         System.out.println(capitalizeLetters(sampleSentence));
 
 
