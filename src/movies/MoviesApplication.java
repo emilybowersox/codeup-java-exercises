@@ -22,20 +22,20 @@ public class MoviesApplication {
 
 
         if (userChoice == 1) {
-            for String Movie[] :MoviesArray {
-                System.out.println(getName() + getCategory());
-            }
-        } else if (userChoice == 2) {
-            System.out.println();
-        } else if (userChoice == 3) {
-            System.out.println();
-        } else if (userChoice == 4) {
-            System.out.println();
-        } else if (userChoice == 5) {
-            System.out.println();
-        } else {
-            System.out.println("Oops! You did not enter a valid choice.");
-        }
+//            for String Movie[] :MoviesArray {
+//                System.out.println(getName() + getCategory());
+//            }
+//        } else if (userChoice == 2) {
+//            System.out.println();
+//        } else if (userChoice == 3) {
+//            System.out.println();
+//        } else if (userChoice == 4) {
+//            System.out.println();
+//        } else if (userChoice == 5) {
+//            System.out.println();
+//        } else {
+//            System.out.println("Oops! You did not enter a valid choice.");
+//        }
     }
 
 
