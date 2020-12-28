@@ -14,6 +14,7 @@ public static String capitalizeLetters (String sentence) {
     //need to add- if the i+= 1 is a space (" "), then i +=1, otherwise, do i+=2
 
     for (int i = 0; i < array.length; i += 2) {
+        //have to switch the order of checking for blank spaces and skipping two indexes
         //problem right now is that after a 1 character word it doesn't recognize the spaces afterwards
         if (array[i] == ' ') { //if the character is blank, move to the next index
             i++;
